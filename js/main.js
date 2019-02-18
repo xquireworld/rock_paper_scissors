@@ -3,9 +3,7 @@ const computerPlay = function(){
     let choice = choices[Math.floor(Math.random()*3)];
     return choice;
   }
-  
-  const playerSelection = prompt("Enter Rock, Paper or Scissors").toLowerCase();
-  const computerSelection = computerPlay();
+
   
   function playRound(playerSelection, computerSelection){
       if(playerSelection === computerSelection){
@@ -32,3 +30,39 @@ const computerPlay = function(){
         return "Choice not found";
       }
   }
+
+  function game(){
+    let playerScore = 0;
+    let computerScore = 0;
+    let playerSelection;
+    let computerSelection;
+    let result;
+    let i = 0;
+    do {
+      playerSelection = prompt("Enter Rock, Paper or Scissors").toLowerCase();
+      computerSelection = computerPlay();
+      result = playRound(playerSelection, computerSelection);
+     console.log(result);
+    if(result[4]==='w'|| result[5]==='w'){
+      playerScore+=1;
+    console.log('player:'+playerScore+' and computer:'+computerScore+'\n');
+    }else if (result[4]==='a'|| result[5]==='a'){
+      console.log('player:'+playerScore+' and computer:'+computerScore+'\n');
+    }else{
+      computerScore +=1;
+      console.log('player:'+playerScore+' and computer:'+computerScore+'\n');
+    }
+    i++;
+    }
+    while (i < 5);
+    if(playerScore === computerScore){
+      console.log('No winner');
+    }else if(playerScore>computerScore){
+      console.log("You win!");
+    }else{
+      console.log('Computer wins!'); 
+    }
+    
+    }
+    
+    game();
