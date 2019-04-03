@@ -1,0 +1,54 @@
+.top h1 {
+    text-align: center;
+    background-color: #4683ea;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: floralwhite;
+}
+
+.top h3 {
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 30px;
+}
+.top h2{
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border: 1px solid  #10d11a;
+    border-radius: 10px;
+    background-color: #10d11a;
+    border-width: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: floralwhite;
+}
+.btn-group button{
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #4683ea;
+    color: floralwhite;
+    border: 1px solid  #4683ea;
+    border-radius: 10px;
+    padding: 10px 24px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.btn-group button:hover {
+    background-color: rgb(39, 69, 235);
+  }
+
+.result h3{
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border: 1px solid  #10d11a;
+    border-radius: 10px;
+    background-color: #10d11a;
+    border-width: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: floralwhite; 
+}
